@@ -12,6 +12,8 @@ const Login = () => {
 
   useEffect(() => {
     setTimeout(() => setMounted(true), 100);
+    // Backend warm up karo
+    fetch("https://photocloud-backend-bw29.onrender.com/ping").catch(() => {});
   }, []);
 
   const handleLogin = async (e) => {
