@@ -105,7 +105,7 @@ const Home = () => {
             <button style={{ ...styles.hamburger, color: theme.text }} onClick={() => setShowSidebar(!showSidebar)}>☰</button>
           )}
           <div style={styles.logoSection}>
-            <img src="/logo.png" alt="Logo" style={{ height: isMobile ? "32px" : "42px", objectFit: "contain" }} />
+            <img src="/logo.svg" alt="Logo" style={{ height: isMobile ? "32px" : "42px", objectFit: "contain" }} />
           </div>
         </div>
         {!isMobile && (

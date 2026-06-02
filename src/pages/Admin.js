@@ -136,7 +136,7 @@ const Admin = () => {
     <div style={{ ...styles.container, background: theme.bg, color: theme.text }}>
       <div style={{ ...styles.navbar, background: theme.navbar, borderBottom: "1px solid " + theme.border }}>
         <div style={styles.logoSection}>
-          <img src="/logo.png" alt="Logo" style={{ height: isMobile ? "32px" : "42px", objectFit: "contain" }} />
+          <img src="/logo.svg" alt="Logo" style={{ height: isMobile ? "32px" : "42px", objectFit: "contain" }} />
         </div>
         {!isMobile && (
           <div style={styles.navTabs}>
