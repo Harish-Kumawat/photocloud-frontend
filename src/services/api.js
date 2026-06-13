@@ -23,4 +23,12 @@ export const createAlbum = (name, description) => api.post("/admin/albums", { na
 export const deleteAlbum = (id) => api.delete("/admin/albums/" + id);
 export const moveToAlbum = (photoId, albumId) => api.put("/admin/photos/" + photoId + "/album/" + albumId);
 
+export const getProfile = () => api.get("/user/profile");
+export const updateProfile = (data) => api.put("/user/profile", data);
+export const changePassword = (data) => api.put("/user/change-password", data);
+
+export const getProfile = () => api.get("/user/profile");
+export const updateProfile = (data) => api.put("/user/profile", data);
+export const changePassword = (data) => api.put("/user/change-password", data);
+
 export default api;

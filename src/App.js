@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import Admin from './pages/Admin';
+import Profile from './pages/Profile';
 
 const PrivateRoute = ({ children }) => {
   const token = localStorage.getItem('token');
@@ -27,6 +28,14 @@ function App() {
           element={
             <PrivateRoute>
               <Admin />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/profile"
+          element={
+            <PrivateRoute>
+              <Profile />
             </PrivateRoute>
           }
         />

@@ -122,6 +122,7 @@ const Home = () => {
           {role === "ADMIN" && (
             <button style={styles.adminBtn} onClick={() => navigate("/admin")}>{isMobile ? "Admin" : "Admin Panel"}</button>
           )}
+          <button style={styles.profileBtn} onClick={() => navigate("/profile")}>👤</button>
           <button style={{ ...styles.logoutBtn, background: theme.cardBg, color: theme.text, border: "1px solid " + theme.border }} onClick={() => { localStorage.clear(); navigate("/"); }}>Logout</button>
         </div>
       </div>
@@ -325,6 +326,7 @@ const styles = {
   iconBtn: { border: "none", borderRadius: "8px", width: "34px", height: "34px", cursor: "pointer", fontSize: "16px", flexShrink: 0 },
   adminBtn: { padding: "7px 12px", background: "linear-gradient(135deg,#667eea,#764ba2)", color: "white", border: "none", borderRadius: "8px", fontWeight: "600", cursor: "pointer", fontSize: "12px", whiteSpace: "nowrap" },
   logoutBtn: { padding: "7px 12px", borderRadius: "8px", fontWeight: "600", cursor: "pointer", fontSize: "12px", whiteSpace: "nowrap" },
+  profileBtn: { background: "linear-gradient(135deg,#667eea,#764ba2)", border: "none", borderRadius: "8px", width: "34px", height: "34px", cursor: "pointer", fontSize: "16px", flexShrink: 0 },
   overlay: { position: "fixed", inset: 0, background: "rgba(0,0,0,0.5)", zIndex: 299 },
   layout: { display: "flex", flex: 1, overflow: "hidden", position: "relative" },
   sidebar: { width: "220px", flexShrink: 0, padding: "16px 12px", display: "flex", flexDirection: "column", gap: "4px", overflowY: "auto" },
